@@ -8,7 +8,7 @@ const replaceTemplate = require('./modules/replaceTemplate')
 /////////////////////////////////////////
 //FILES
 
-//// BOOO, Sync is blocking the single thread node.js uses for every user
+//// Sync is blocking the single thread node.js uses for every user
 // const textIn = fs.readFileSync('./txt/input.txt', 'utf-8');
 // console.log(textIn);
 // const textOut = `This is what we know about the avocado: ${textIn}.\n  Created on ${Date.now()}`;
