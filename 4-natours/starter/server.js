@@ -31,3 +31,10 @@ process.on('unhandledRejection', (err) => {
     process.exit(1);
   });
 });
+
+process.on('unhandledException', (err) => {
+  console.log(`UNHANDLED EXCEPTION! Shutting down due to ${err.name}`);
+  server.close(() => {
+    process.exit(1);
+  });
+});
